@@ -21,7 +21,7 @@ export const Text = styled.h2`
 `;
 
 export const Hide = styled.div`
-    overflow: hidden;
+  overflow: hidden;
 `;
 
 export const InfoText = styled.p``;
