@@ -1,11 +1,12 @@
 import React from "react";
-import { AboutSection, SkillsSection } from "../components";
+import { AboutSection, SkillsSection, FaqSection } from "../components";
 
 export default () => {
   return (
     <>
       <AboutSection />
       <SkillsSection />
+      <FaqSection />
     </>
   );
 };
