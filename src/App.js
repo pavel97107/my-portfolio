@@ -4,11 +4,13 @@ import React from "react";
 import { GlobalStyle } from "./GlobalStyle";
 //imports pages
 import { AboutMe } from "./pages";
-
+//import componnets
+import {Nav} from './components'
 function App() {
   return (
     <div className="App">
       <GlobalStyle />
+      <Nav />
       <AboutMe />
     </div>
   );
