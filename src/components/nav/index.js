@@ -1,24 +1,24 @@
 import React from "react";
-import {Nav} from './styles/nav'
-
+import { Nav } from "./styles/nav";
+import { Link } from "react-router-dom";
 
 export default () => {
   return (
     <Nav>
       <h1>
-        <a id="logo" href="!#">
+        <Link id="logo" to="/">
           Pavel
-        </a>
+        </Link>
       </h1>
       <ul className="nav-links">
         <li className="link">
-          <a href="!#">about me</a>
+          <Link to="/">about me</Link>
         </li>
         <li className="link">
-          <a href="!#">my projects</a>
+          <Link to="/projects">my projects</Link>
         </li>
         <li className="link">
-          <a href="!#">contact me</a>
+          <Link to="/contact">contact me</Link>
         </li>
       </ul>
     </Nav>
