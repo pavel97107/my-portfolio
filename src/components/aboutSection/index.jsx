@@ -17,32 +17,19 @@ import {
 } from "./styles/aboutSection";
 
 export default () => {
-  const titleAnim = {
-    hidden: { opacity: 0, transition: { duration: 2 } },
-    show: { opacity: 1 },
-  };
-
-  const container = {
-    hidden: { x: 100 },
-    show: {
-      x: 0,
-      transition: { duration: 1, ease: "easeOut", staggerChildren: 1 },
-    },
-  };
-
   return (
     <About>
       <Description>
-        <motion.div variants={container} initial="hidden" animate="show">
+        <motion.div>
           <Hide>
-            <motion.h2 variants={titleAnim}>Hi</motion.h2>
+            <motion.h2>Hi</motion.h2>
           </Hide>
           <Hide>
-            <motion.h2 variants={titleAnim}>
+            <motion.h2>
               My name is <CustomizeText>Pavel</CustomizeText>
             </motion.h2>
           </Hide>
-          <motion.h2 variants={titleAnim}>
+          <motion.h2>
             <Text>I'am Frontend Developer.</Text>
           </motion.h2>
         </motion.div>

@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { projectsList } from "../projectsData";
 
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animation";
+
 import {
   Details,
   HeadLine,
@@ -25,7 +28,12 @@ export default ({ location }) => {
   return (
     <>
       {project && (
-        <Details>
+        <Details
+          exit="exit"
+          variants={pageAnimation}
+          initial="hidden"
+          animate="show"
+        >
           <HeadLine>
             <h2>{project.title}</h2>
             <img src={project.mainImg} alt={project.title} />

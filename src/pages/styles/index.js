@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const Projects = styled.div`
+export const Projects = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;
@@ -26,7 +27,7 @@ export const Project = styled.div`
 
 //projectsDetail
 
-export const Details = styled.div`
+export const Details = styled(motion.div)`
   color: white;
 `;
 export const HeadLine = styled.div`
@@ -73,7 +74,6 @@ export const TechStyle = styled.div`
   }
 `;
 
-
 export const ImageContainer = styled.div`
   min-height: 50vh;
   img {
@@ -81,4 +81,4 @@ export const ImageContainer = styled.div`
     height: 100vh;
     object-fit: cover;
   }
-`
+`;

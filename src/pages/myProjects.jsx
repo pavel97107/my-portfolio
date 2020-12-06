@@ -3,13 +3,19 @@ import { Link } from "react-router-dom";
 import netflix from "../img/netflix.png";
 import multiform from "../img/multi.png";
 import musicapp from "../img/waves.png";
-
+import { pageAnimation } from "../animation";
 //styledComponent
 import { Projects, Project } from "./styles";
 
 export default ({ location: { pathname } }) => {
   return (
-    <Projects>
+    <Projects
+      style={{ background: "white" }}
+      exit="exit"
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+    >
       <Project>
         <h2>Netflix Clone</h2>
         <div className="line"></div>
