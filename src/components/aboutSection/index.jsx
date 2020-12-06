@@ -1,7 +1,8 @@
 import React from "react";
 import myPhoto from "../../img/me.jpg";
 import { motion } from "framer-motion";
-
+//Animation
+import { titleAnimation, fade, photoAnimation } from "../../animation";
 //StyledComponents
 import {
   About,
@@ -20,27 +21,27 @@ export default () => {
   return (
     <About>
       <Description>
-        <motion.div>
+        <Title>
           <Hide>
-            <motion.h2>Hi</motion.h2>
+            <motion.h2 variants={titleAnimation}>Hi</motion.h2>
           </Hide>
           <Hide>
-            <motion.h2>
+            <motion.h2 variants={titleAnimation}>
               My name is <CustomizeText>Pavel</CustomizeText>
             </motion.h2>
           </Hide>
-          <motion.h2>
+          <motion.h2 variants={titleAnimation}>
             <Text>I'am Frontend Developer.</Text>
           </motion.h2>
-        </motion.div>
-        <InfoText>
+        </Title>
+        <InfoText variants={fade}>
           Contact me if you need a promising developer with a desire to
           constantly develop.
         </InfoText>
-        <Button>CV</Button>
+        <Button variants={fade}>CV</Button>
       </Description>
       <ImageContainer>
-        <Image src={myPhoto} alt="myPhoto" />
+        <Image variants={photoAnimation} src={myPhoto} alt="myPhoto" />
       </ImageContainer>
     </About>
   );
