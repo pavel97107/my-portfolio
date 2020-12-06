@@ -17,6 +17,8 @@ import {
   Button,
 } from "./styles/aboutSection";
 
+import { Wave } from "../";
+
 export default () => {
   return (
     <About>
@@ -43,6 +45,7 @@ export default () => {
       <ImageContainer>
         <Image variants={photoAnimation} src={myPhoto} alt="myPhoto" />
       </ImageContainer>
+      <Wave />
     </About>
   );
 };
