@@ -76,11 +76,7 @@ const Question = ({ active, title, id, answer, setActiveQuestion }) => {
       onClick={() => setActiveQuestion(id)}
       className="question"
     >
-<<<<<<< HEAD
-      <h4>{title}</h4>
-=======
       <motion.h4 layout>{title}</motion.h4>
->>>>>>> 971b759 (FinishingFaQAnimation)
       {active && (
         <div className="answer">
           <p>{answer}</p>
