@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import myPhoto from "../../img/me.jpg";
 import { motion } from "framer-motion";
 //Animation
@@ -20,6 +20,10 @@ import {
 import { Wave } from "../";
 
 export default () => {
+  useEffect(() => {
+    document.title = "Pavel Serebryany";
+  }, []);
+
   return (
     <About>
       <Description>

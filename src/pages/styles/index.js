@@ -15,7 +15,7 @@ export const Project = styled.div`
 
   .line {
     height: 0.5rem;
-    background: #ccc;
+    background: #23d997;
     margin-bottom: 3rem;
   }
   img {
@@ -81,4 +81,30 @@ export const ImageContainer = styled.div`
     height: 100vh;
     object-fit: cover;
   }
+`;
+
+export const Hide = styled.div`
+  overflow: hidden;
+`;
+
+export const Frame1 = styled(motion.div)`
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 10%;
+  left: 0;
+  z-index: 2;
+  background-color: #fffebf;
+`;
+
+export const Frame2 = styled(Frame1)`
+  background-color: #ff8efb;
+`;
+
+export const Frame3 = styled(Frame1)`
+  background-color: #8ed2ff;
+`;
+
+export const Frame4 = styled(Frame1)`
+  background-color: #8effa0;
 `;
