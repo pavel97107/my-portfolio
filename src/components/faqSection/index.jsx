@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Faq } from "./styles/faqSection";
-
+import { motion, AnimateSharedLayout } from "framer-motion";
 export default () => {
   const [questionList, setQuestionList] = useState([
     {
@@ -53,15 +53,17 @@ export default () => {
         Any questions <span>FAQ</span>
       </h2>
       <div className="questions">
-        {questionList.map((question) => {
-          return (
-            <Question
-              key={question.id}
-              setActiveQuestion={setActiveQuestionHandler}
-              {...question}
-            />
-          );
-        })}
+        <AnimateSharedLayout>
+          {questionList.map((question) => {
+            return (
+              <Question
+                key={question.id}
+                setActiveQuestion={setActiveQuestionHandler}
+                {...question}
+              />
+            );
+          })}
+        </AnimateSharedLayout>
       </div>
     </Faq>
   );
@@ -69,7 +71,11 @@ export default () => {
 
 const Question = ({ active, title, id, answer, setActiveQuestion }) => {
   return (
-    <div onClick={() => setActiveQuestion(id)} className="question">
+    <motion.div
+      layout
+      onClick={() => setActiveQuestion(id)}
+      className="question"
+    >
       <h4>{title}</h4>
       {active && (
         <div className="answer">
@@ -77,6 +83,6 @@ const Question = ({ active, title, id, answer, setActiveQuestion }) => {
         </div>
       )}
       <div className="faq-line"></div>
-    </div>
+    </motion.div>
   );
 };
