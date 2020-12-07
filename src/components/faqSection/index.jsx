@@ -1,57 +1,82 @@
-import React from "react";
-import {Faq} from './styles/faqSection'
-
-
+import React, { useState } from "react";
+import { Faq } from "./styles/faqSection";
 
 export default () => {
+  const [questionList, setQuestionList] = useState([
+    {
+      active: false,
+      id: 1,
+      title: "How long have I been web development?",
+      answer:
+        " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, quam?",
+    },
+    {
+      active: false,
+      id: 2,
+      title: "Where did I study, where did I work, tell us about yourself?",
+      answer:
+        " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, quam?",
+    },
+    {
+      active: false,
+      id: 3,
+      title: "What are you striving for?",
+      answer:
+        " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, quam?",
+    },
+    {
+      active: false,
+      id: 4,
+      title: "The dream Team?",
+      answer:
+        " Lorem ipsum dolor sitamet consectetur adipisicing elit. Quis, quam?",
+    },
+  ]);
+
+  const setActiveQuestionHandler = (id) => {
+    const updateQuestionList = questionList.map((question) => {
+      if (id === question.id) {
+        if (question.active) {
+          return { ...question, active: false };
+        }
+        return { ...question, active: true };
+      }
+      return question;
+    });
+
+    setQuestionList(updateQuestionList);
+  };
+
   return (
     <Faq>
       <h2>
         Any questions <span>FAQ</span>
       </h2>
       <div className="questions">
-        <div className="question">
-          <h4>How long have I been web development?</h4>
-          <div className="answer">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
-              quam?
-            </p>
-          </div>
-          <div className="faq-line"></div>
-        </div>
-        
-        <div className="question">
-          <h4>Where did I study, where did I work, tell us about yourself?</h4>
-          <div className="answer">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
-              quam?
-            </p>
-          </div>
-          <div className="faq-line"></div>
-        </div>
-        <div className="question">
-          <h4>What are you striving for?</h4>
-          <div className="answer">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
-              quam?
-            </p>
-          </div>
-          <div className="faq-line"></div>
-        </div>
-        <div className="question">
-          <h4>The dream Team?</h4>
-          <div className="answer">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
-              quam?
-            </p>
-          </div>
-          <div className="faq-line"></div>
-        </div>
+        {questionList.map((question) => {
+          return (
+            <Question
+              key={question.id}
+              setActiveQuestion={setActiveQuestionHandler}
+              {...question}
+            />
+          );
+        })}
       </div>
     </Faq>
+  );
+};
+
+const Question = ({ active, title, id, answer, setActiveQuestion }) => {
+  return (
+    <div onClick={() => setActiveQuestion(id)} className="question">
+      <h4>{title}</h4>
+      {active && (
+        <div className="answer">
+          <p>{answer}</p>
+        </div>
+      )}
+      <div className="faq-line"></div>
+    </div>
   );
 };
