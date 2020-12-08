@@ -108,3 +108,30 @@ export const Frame3 = styled(Frame1)`
 export const Frame4 = styled(Frame1)`
   background-color: #8effa0;
 `;
+
+//Contact
+
+export const ContactStyle = styled(motion.div)`
+  padding: 5rem 10rem;
+  color: #353535;
+  min-height: 90vh;
+`;
+export const Title = styled.div`
+  margin-bottom: 4rem;
+  color: black;
+`;
+
+export const Circle = styled.div`
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  background-color: #353535;
+`;
+
+export const Social = styled(motion.div)`
+  display: flex;
+  align-items: center;
+  h2 {
+    margin: 2rem;
+  }
+`;
