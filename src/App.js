@@ -11,7 +11,6 @@ import { Route, Switch, useLocation } from "react-router-dom";
 
 //Animate
 import { AnimatePresence } from "framer-motion";
-
 function App() {
   const location = useLocation();
 

@@ -17,7 +17,7 @@ import {
   Cards,
   Card,
 } from "./styles/skillsSection";
-import { useScroll } from "../../hooks/useScroll";
+import { useScroll } from "../../hooks";
 
 export default () => {
   const [element, controls] = useScroll();

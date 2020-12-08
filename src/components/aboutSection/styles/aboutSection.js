@@ -19,7 +19,7 @@ export const Title = styled.div`
   overflow: hidden;
 `;
 
-export const Text = styled.h2`
+export const Text = styled(motion.h2)`
   font-weight: lighter;
 `;
 

@@ -4,6 +4,7 @@ import { pageAnimation, titleAnimation } from "../animation";
 
 //styled
 import { ContactStyle, Title, Hide, Circle, Social } from "./styles";
+//hooks
 export default () => {
   useEffect(() => {
     document.title = "Contact";

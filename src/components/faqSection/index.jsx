@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Faq } from "./styles/faqSection";
 import { motion, AnimateSharedLayout } from "framer-motion";
-import { useScroll } from "../../hooks/useScroll";
+import { useScroll } from "../../hooks";
 //animation
 import { scrollReveal } from "../../animation";
 export default () => {

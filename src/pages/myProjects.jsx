@@ -23,7 +23,7 @@ import {
   Frame4,
 } from "./styles";
 //hooks
-import { useScroll } from "../hooks/useScroll";
+import { useScroll, UseScrollTop } from "../hooks";
 
 export default ({ location: { pathname } }) => {
   const [element2, controls2] = useScroll();
@@ -44,8 +44,7 @@ export default ({ location: { pathname } }) => {
       <Frame2 variants={slider}></Frame2>
       <Frame3 variants={slider}></Frame3>
       <Frame4 variants={slider}></Frame4>
-      <Project
-      >
+      <Project>
         <motion.h2 variants={fade}>Netflix Clone</motion.h2>
         <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link to={pathname + "/netflix"}>
@@ -94,6 +93,7 @@ export default ({ location: { pathname } }) => {
           </Hide>
         </Link>
       </Project>
+      <UseScrollTop />
     </Projects>
   );
 };
