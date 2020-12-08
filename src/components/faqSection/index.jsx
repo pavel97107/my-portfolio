@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { Faq } from "./styles/faqSection";
 import { motion, AnimateSharedLayout } from "framer-motion";
+import { useScroll } from "../../hooks/useScroll";
+//animation
+import { scrollReveal } from "../../animation";
 export default () => {
   const [questionList, setQuestionList] = useState([
     {
@@ -33,6 +36,8 @@ export default () => {
     },
   ]);
 
+  const [element, controls] = useScroll();
+
   const setActiveQuestionHandler = (id) => {
     const updateQuestionList = questionList.map((question) => {
       if (id === question.id) {
@@ -48,7 +53,7 @@ export default () => {
   };
 
   return (
-    <Faq>
+    <Faq ref={element} variants={scrollReveal} animate={controls}>
       <h2>
         Any questions <span>FAQ</span>
       </h2>

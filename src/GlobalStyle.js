@@ -8,6 +8,9 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
 }
 
+.App {
+    overflow: hidden;
+}
 
 body {
     background: #1b1b1b;
