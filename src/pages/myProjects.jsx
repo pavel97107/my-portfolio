@@ -9,6 +9,7 @@ import {
   photoAnimation,
   lineAnimation,
   slider,
+  scrollReveal,
 } from "../animation";
 import { motion } from "framer-motion";
 //styledComponent
@@ -21,8 +22,12 @@ import {
   Frame3,
   Frame4,
 } from "./styles";
+//hooks
+import { useScroll } from "../hooks/useScroll";
 
 export default ({ location: { pathname } }) => {
+  const [element2, controls2] = useScroll();
+  const [element3, controls3] = useScroll();
   useEffect(() => {
     document.title = "Projects";
   }, []);
@@ -39,7 +44,8 @@ export default ({ location: { pathname } }) => {
       <Frame2 variants={slider}></Frame2>
       <Frame3 variants={slider}></Frame3>
       <Frame4 variants={slider}></Frame4>
-      <Project>
+      <Project
+      >
         <motion.h2 variants={fade}>Netflix Clone</motion.h2>
         <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link to={pathname + "/netflix"}>
@@ -52,7 +58,12 @@ export default ({ location: { pathname } }) => {
           </Hide>
         </Link>
       </Project>
-      <Project>
+      <Project
+        ref={element2}
+        variants={scrollReveal}
+        initial="hidden"
+        animate={controls2}
+      >
         <motion.h2>Multi-Step Register Form</motion.h2>
         <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link to={pathname + "/multi-form"}>
@@ -65,7 +76,12 @@ export default ({ location: { pathname } }) => {
           </Hide>
         </Link>
       </Project>
-      <Project>
+      <Project
+        ref={element3}
+        variants={scrollReveal}
+        initial="hidden"
+        animate={controls3}
+      >
         <motion.h2>Music App</motion.h2>
         <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link to={pathname + "/music-app"}>

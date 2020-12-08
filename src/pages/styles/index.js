@@ -10,7 +10,7 @@ export const Projects = styled(motion.div)`
     padding: 1rem 0rem;
   }
 `;
-export const Project = styled.div`
+export const Project = styled(motion.div)`
   padding-bottom: 10rem;
 
   .line {
