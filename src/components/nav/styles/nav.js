@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { motion } from "framer-motion";
 export const Nav = styled.nav`
   width: 100%;
   height: 10vh;
@@ -67,4 +67,12 @@ export const Nav = styled.nav`
   @media (max-width: 375px) {
     height: 13vh;
   }
+`;
+
+export const Line = styled(motion.div)`
+  height: 0.3rem;
+  background: #23d997;
+  width: 0%;
+  position: absolute;
+  bottom: -80%;
 `;
