@@ -37,6 +37,7 @@ export const Nav = styled.nav`
   }
 
   @media (max-width: 1300px) {
+    height: 14vh;
     flex-direction: column;
     padding: 2rem 1rem;
     #logo {
