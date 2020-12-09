@@ -6,7 +6,8 @@ import {
   Description,
 } from "../../aboutSection/styles/aboutSection";
 
-export const ImageContainer_ = styled(ImageContainer)``;
+export const ImageContainer_ = styled(ImageContainer)`
+`;
 export const Image_ = styled(Image)``;
 export const Skills = styled(About)`
   h2 {
@@ -15,13 +16,20 @@ export const Skills = styled(About)`
 
   p {
     width: 70%;
-    padding: 2rem 0rem 4rem 0rem;
+    padding: 2rem 2rem 4rem 0rem;
   }
 `;
-export const Description_ = styled(Description)``;
+export const Description_ = styled(Description)`
+  order: 1;
+
+  h2 {
+    text-align: center;
+  }
+`;
 
 export const Cards = styled.div`
   display: flex;
+  justify-content: flex-end;
   flex-wrap: wrap;
 
   @media (max-width: 1300px) {

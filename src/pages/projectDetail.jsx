@@ -10,6 +10,8 @@ import {
   Technology,
   TechStyle,
   ImageContainer,
+  View,
+  ButtonView,
 } from "./styles";
 
 export default ({ location }) => {
@@ -45,6 +47,9 @@ export default ({ location }) => {
           </Technology>
           <ImageContainer>
             <img src={project.secondaryImg} alt={project.title} />
+            <View href={project.address}>
+              <ButtonView>View</ButtonView>
+            </View>
           </ImageContainer>
         </Details>
       )}

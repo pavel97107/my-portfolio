@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import netflix from "../img/netflix.png";
-import multiform from "../img/multi.png";
-import musicapp from "../img/waves.png";
+import netflix from "../img/1.png";
+import multiform from "../img/3.png";
+import musicapp from "../img/2.png";
 import {
   pageAnimation,
   fade,

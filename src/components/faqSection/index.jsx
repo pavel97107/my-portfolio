@@ -11,28 +11,28 @@ export default () => {
       id: 1,
       title: "How long have I been web development?",
       answer:
-        " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, quam?",
+        " I have been developing for about a year, took courses in an IT INCUBATOR, I have several educational works, I apply for the position of a junior front-end developer",
     },
     {
       active: false,
       id: 2,
       title: "Where did I study, where did I work, tell us about yourself?",
       answer:
-        " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, quam?",
+        " I have a vocational education, studied at the University of BRU (Civil Engineer), but unfortunately or fortunately did not graduate from it.",
     },
     {
       active: false,
       id: 3,
       title: "What are you striving for?",
       answer:
-        " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, quam?",
+        " I strive to become a specialist who is well versed in web development, regardless of whether it is a front-end or a backend.",
     },
     {
       active: false,
       id: 4,
       title: "The dream Team?",
       answer:
-        " Lorem ipsum dolor sitamet consectetur adipisicing elit. Quis, quam?",
+        "I want to work with people who know their business. To interact with them and gain new knowledge.",
     },
   ]);
 

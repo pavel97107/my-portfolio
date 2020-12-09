@@ -98,12 +98,31 @@ export const TechStyle = styled.div`
 `;
 
 export const ImageContainer = styled.div`
+  position: relative;
   min-height: 50vh;
   img {
     width: 100%;
     height: 100vh;
     object-fit: cover;
   }
+`;
+
+export const View = styled.a`
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+  z-index: 5;
+`;
+
+export const ButtonView = styled.button`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `;
 
 export const Hide = styled.div`
@@ -136,8 +155,9 @@ export const Frame4 = styled(Frame1)`
 
 export const ContactStyle = styled(motion.div)`
   padding: 5rem 10rem;
-  color: #353535;
+  color: white;
   min-height: 90vh;
+  background: #1b1b1b;
 
   @media (max-width: 600px) {
     padding: 1rem 1rem;
@@ -148,17 +168,23 @@ export const ContactStyle = styled(motion.div)`
 `;
 export const Title = styled.div`
   margin-bottom: 4rem;
-  color: black;
+  color: #23d997;
 `;
 
 export const Circle = styled.div`
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
-  background-color: #353535;
+  position:relative;
+  width: 4rem;
+  height: 6rem;
+  overflow: hidden;
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
 `;
 
-export const Social = styled(motion.div)`
+export const Social = styled(motion.a)`
   display: flex;
   align-items: center;
   h2 {

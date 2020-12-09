@@ -34,7 +34,7 @@ export default () => {
           />
         </li>
         <li className="link">
-          <Link to="/contact">contact me</Link>
+          <Link to="/contact">contacts</Link>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}

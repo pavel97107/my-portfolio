@@ -11,6 +11,7 @@ export default () => {
       variants={pageAnimation}
       initial="hidden"
       animate="show"
+      style={{ overflow: "hidden" }}
     >
       <AboutSection />
       <SkillsSection />

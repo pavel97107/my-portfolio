@@ -1,15 +1,21 @@
-import multiform from "./img/multi.png";
-import netflix from "./img/netflix.png";
-import musicapp from "./img/waves.png";
+import multiform from "./img/3.png";
+import netflix from "./img/1.png";
+import musicapp from "./img/2.png";
+
+import multiformSec from "./img/multi.png";
+import netflixSec from "./img/netflix.png";
+import musicappSec from "./img/waves.png";
+
 
 export const projectsList = () => {
   return [
     {
       title: "Netflix Clone",
       mainImg: netflix,
-      secondaryImg: netflix,
+      secondaryImg: netflixSec,
       id: 1,
       url: "/projects/netflix",
+      address: "https://nextflix-clone-7bc43.web.app/",
       technology: [
         {
           title: "React",
@@ -29,9 +35,10 @@ export const projectsList = () => {
     {
       title: "Multi-Step Form",
       mainImg: multiform,
-      secondaryImg: multiform,
+      secondaryImg: multiformSec,
       id: 2,
       url: "/projects/multi-form",
+      address: "https://pavel97107.github.io/multisteps-register-form/",
       technology: [
         {
           title: "React",
@@ -42,9 +49,10 @@ export const projectsList = () => {
     {
       title: "Music App",
       mainImg: musicapp,
-      secondaryImg: musicapp,
+      secondaryImg: musicappSec,
       id: 3,
       url: "/projects/music-app",
+      address: "https://pavel97107.github.io/music_app/",
       technology: [
         {
           title: "React",
