@@ -23,6 +23,12 @@ export const Description_ = styled(Description)``;
 export const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
+
+  @media (max-width: 1300px) {
+    justify-content: center;
+  }
+
+ 
 `;
 
 export const Card = styled.div`
@@ -37,5 +43,14 @@ export const Card = styled.div`
           color: black;
           padding: 1rem;
       }
+  }
+
+  @media (max-width: 375px) {
+    flex-basis: 7rem;
+    padding: 1rem;
+  }
+
+  p {
+    width: 100%;
   }
 `;

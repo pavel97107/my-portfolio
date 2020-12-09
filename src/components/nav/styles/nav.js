@@ -35,4 +35,35 @@ export const Nav = styled.nav`
     padding-left: 6rem;
     position: relative;
   }
+
+  @media (max-width: 1300px) {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    #logo {
+      padding: 2rem;
+    }
+
+    ul {
+      padding: 2rem;
+      justify-content: space-around;
+      width: 100%;
+
+      li {
+        padding: 0;
+      }
+    }
+  }
+
+  @media (max-width: 320px) {
+    height: 15vh;
+    padding: 1rem;
+
+    ul {
+      padding: 1rem;
+    }
+  }
+
+  @media (max-width: 375px) {
+    height: 13vh;
+  }
 `;

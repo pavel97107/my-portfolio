@@ -9,6 +9,14 @@ export const Projects = styled(motion.div)`
   h2 {
     padding: 1rem 0rem;
   }
+
+  @media (max-width: 1300px) {
+    padding: 2rem 2rem;
+  }
+
+  @media (max-width: 375px) {
+    padding: 1rem 1rem;
+  }
 `;
 export const Project = styled(motion.div)`
   padding-bottom: 10rem;
@@ -46,14 +54,25 @@ export const HeadLine = styled.div`
     height: 70vh;
     object-fit: cover;
   }
+
+  @media (max-width: 320px) {
+    h2 {
+      font-size: 2rem;
+    }
+  }
 `;
 
 export const Technology = styled.div`
   min-height: 80vh;
+  flex-wrap: wrap;
   display: flex;
   margin: 5rem 10rem;
   align-items: center;
   justify-content: space-around;
+
+  @media (min-width: 1350px) {
+    flex-wrap: nowrap;
+  }
 `;
 
 export const TechStyle = styled.div`
@@ -71,6 +90,10 @@ export const TechStyle = styled.div`
 
   p {
     padding: 2rem 0rem;
+  }
+
+  @media (max-width: 375px) {
+    padding: 0;
   }
 `;
 
@@ -115,6 +138,13 @@ export const ContactStyle = styled(motion.div)`
   padding: 5rem 10rem;
   color: #353535;
   min-height: 90vh;
+
+  @media (max-width: 600px) {
+    padding: 1rem 1rem;
+    h2 {
+      font-size: 2rem;
+    }
+  }
 `;
 export const Title = styled.div`
   margin-bottom: 4rem;
