@@ -44,7 +44,13 @@ export default () => {
           Contact me if you need a promising developer with a desire to
           constantly develop.
         </InfoText>
-        <Button variants={fade}>CV</Button>
+        <Button
+          target="_blank"
+          href="https://drive.google.com/file/d/15VSlSLqSixaG4BdndXcT-VIAQuLraAbY/view?usp=sharing"
+          variants={fade}
+        >
+          CV
+        </Button>
       </Description>
       <ImageContainer>
         <Image variants={photoAnimation} src={myPhoto} alt="myPhoto" />

@@ -47,7 +47,7 @@ export default ({ location }) => {
           </Technology>
           <ImageContainer>
             <img src={project.secondaryImg} alt={project.title} />
-            <View href={project.address}>
+            <View target="_blank" href={project.address}>
               <ButtonView>View</ButtonView>
             </View>
           </ImageContainer>

@@ -22,7 +22,7 @@ export const Description = styled.div`
   @media (max-width: 1300px) {
     padding: 0;
 
-    button {
+    a {
       margin: 2rem 0rem 5rem 0rem;
     }
   }
@@ -53,4 +53,19 @@ export const Image = styled(motion.img)`
   height: 80vh;
   object-fit: cover;
 `;
-export const Button = styled(motion.button)``;
+export const Button = styled(motion.a)`
+  display: inline-flex;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border: 3px solid #23d997;
+  background: transparent;
+  color: white;
+  transition: all 0.5s ease;
+  &:hover {
+    background: #23d997;
+    color: white;
+  }
+`;
