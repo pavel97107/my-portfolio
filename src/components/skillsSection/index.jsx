@@ -1,9 +1,4 @@
 import React from "react";
-import clock from "../../img/clock.svg";
-import diaphragm from "../../img/diaphragm.svg";
-import money from "../../img/money.svg";
-import teamwork from "../../img/teamwork.svg";
-import home2 from "../../img/home2.png";
 
 //animation
 import { scrollReveal } from "../../animation";
@@ -31,28 +26,28 @@ export default () => {
         <Cards>
           <Card>
             <div className="icon">
-              <img src={clock} alt="clock" />
+              <img src="/img/clock.svg" alt="clock" />
               <h3>Efficient</h3>
             </div>
             <p>I am able to solve problems of different difficulty levels.</p>
           </Card>
           <Card>
             <div className="icon">
-              <img src={diaphragm} alt="diaphragm" />
+              <img src="img/diaphragm.svg" alt="diaphragm" />
               <h3>Hard Worker</h3>
             </div>
             <p>I love my job!</p>
           </Card>
           <Card>
             <div className="icon">
-              <img src={money} alt="money" />
+              <img src="/img/money.svg" alt="money" />
               <h3>Ambitious</h3>
             </div>
             <p>In the future I want to become a full stack developer.</p>
           </Card>
           <Card>
             <div className="icon">
-              <img src={teamwork} alt="teamwork" />
+              <img src="/img/teamwork.svg" alt="teamwork" />
               <h3>Team work</h3>
             </div>
             <p>
@@ -63,7 +58,7 @@ export default () => {
         </Cards>
       </Description_>
       <ImageContainer_>
-        <Image_ src={home2} alt="skills picture" />
+        <Image_ src="/img/home2.png" alt="skills picture" />
       </ImageContainer_>
     </Skills>
   );

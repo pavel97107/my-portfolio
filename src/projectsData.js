@@ -1,18 +1,12 @@
-import multiform from "./img/3.png";
-import netflix from "./img/1.png";
-import musicapp from "./img/2.png";
 
-import multiformSec from "./img/multi.png";
-import netflixSec from "./img/netflix.png";
-import musicappSec from "./img/waves.png";
 
 
 export const projectsList = () => {
   return [
     {
       title: "Netflix Clone",
-      mainImg: netflix,
-      secondaryImg: netflixSec,
+      mainImg: "/img/1.png",
+      secondaryImg: "/img/netflix.png",
       id: 1,
       url: "/projects/netflix",
       address: "https://nextflix-clone-7bc43.web.app/",
@@ -34,8 +28,8 @@ export const projectsList = () => {
     },
     {
       title: "Multi-Step Form",
-      mainImg: multiform,
-      secondaryImg: multiformSec,
+      mainImg: "/img/3.png",
+      secondaryImg: "/img/multi.png",
       id: 2,
       url: "/projects/multi-form",
       address: "https://pavel97107.github.io/multisteps-register-form/",
@@ -48,8 +42,8 @@ export const projectsList = () => {
     },
     {
       title: "Music App",
-      mainImg: musicapp,
-      secondaryImg: musicappSec,
+      mainImg: "/img/2.png",
+      secondaryImg: "/img/waves.png",
       id: 3,
       url: "/projects/music-app",
       address: "https://pavel97107.github.io/music_app/",

@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { projectsList } from "../projectsData";
-
-import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
 
 import {

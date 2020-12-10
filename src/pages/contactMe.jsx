@@ -2,11 +2,7 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { pageAnimation, titleAnimation } from "../animation";
 
-//socialIcons
-import linkedin from "../img/linkedin.svg";
-import instagram from "../img/instagram.svg";
-import vk from "../img/vk.svg";
-import github from "../img/github.svg";
+
 
 //styled
 import { ContactStyle, Title, Hide, Circle, Social } from "./styles";
@@ -34,7 +30,7 @@ export default () => {
             variants={titleAnimation}
           >
             <Circle>
-              <img src={linkedin} alt="linkedin" />
+              <img src="/img/linkedin.svg" alt="linkedin" />
             </Circle>
             <h2>Linkedin</h2>
           </Social>
@@ -46,7 +42,7 @@ export default () => {
             variants={titleAnimation}
           >
             <Circle>
-              <img src={instagram} alt="instagram" />
+              <img src="/img/instagram.svg" alt="instagram" />
             </Circle>
             <h2>Instagram</h2>
           </Social>
@@ -58,7 +54,7 @@ export default () => {
             variants={titleAnimation}
           >
             <Circle>
-              <img src={vk} alt="vk" />
+              <img src="/img/vk.svg" alt="vk" />
             </Circle>
             <h2>VK</h2>
           </Social>
@@ -70,7 +66,7 @@ export default () => {
             variants={titleAnimation}
           >
             <Circle>
-              <img src={github} alt="github" />
+              <img src="/img/github.svg" alt="github" />
             </Circle>
             <h2>GitHub</h2>
           </Social>

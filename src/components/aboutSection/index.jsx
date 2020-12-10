@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import myPhoto from "../../img/me.jpg";
 import { motion } from "framer-motion";
 //Animation
 import { titleAnimation, fade, photoAnimation } from "../../animation";
@@ -53,7 +52,7 @@ export default () => {
         </Button>
       </Description>
       <ImageContainer>
-        <Image variants={photoAnimation} src={myPhoto} alt="myPhoto" />
+        <Image variants={photoAnimation} src='/img/me.jpg' alt="myPhoto" />
       </ImageContainer>
       <Wave />
     </About>

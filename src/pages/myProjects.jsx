@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import netflix from "../img/1.png";
-import multiform from "../img/3.png";
-import musicapp from "../img/2.png";
+
+
 import {
   pageAnimation,
   fade,
@@ -51,7 +50,7 @@ export default ({ location: { pathname } }) => {
           <Hide>
             <motion.img
               variants={photoAnimation}
-              src={netflix}
+              src="/img/1.png"
               alt="neflix-clone"
             />
           </Hide>
@@ -69,7 +68,7 @@ export default ({ location: { pathname } }) => {
           <Hide>
             <motion.img
               variants={photoAnimation}
-              src={multiform}
+              src="/img/3.png"
               alt="multi-step-form"
             />
           </Hide>
@@ -87,7 +86,7 @@ export default ({ location: { pathname } }) => {
           <Hide>
             <motion.img
               variants={photoAnimation}
-              src={musicapp}
+              src="/img/2.png"
               alt="music-app"
             />
           </Hide>
